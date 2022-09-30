@@ -1,27 +1,13 @@
 pipeline {
-    agent any
 
-    stage ('Pull Request Monitoring - Dashboard Configuration') {
-        monitoring (
-            [
-                {
-                    // Minimal usage of one portlet 
-                    "id": "portlet-id"
-                }, 
-                {   
-                    // Feel free to customize the portlets
-                    "id": "another-portlet-id",
-                    "width": 200,
-                    "height": 100,
-                    "color": "#FF5733"
-                }
-            ]
-        )
-    }
+    agent any
+    
     stages {
         stage("Step 1") {
             steps {
                 echo "Hola mundo!!!"
+                sh "hostname"
+                sh "ip add"
             }
         }
     }
