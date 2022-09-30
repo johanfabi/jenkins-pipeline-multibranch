@@ -8,7 +8,6 @@ pipeline {
             echo "¡¡ Hola Mundo !!"
                 script{                 
                     sh 'hostname'
-                    sh 'ip add'
                 }
             }
         }
