@@ -5,9 +5,11 @@ pipeline {
     stages {
         stage("Step 1") {
             steps {
-                echo "Hola mundo!!!"
-                sh "hostname"
-                sh "ip add"
+            echo "¡¡ Hola Mundo !!"
+                script{                 
+                    sh 'hostname'
+                    sh 'ip add'
+                }
             }
         }
     }
